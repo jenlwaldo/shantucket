@@ -16,16 +16,9 @@
 html, body {
   margin: 0;
   padding: 0;
-  height: 100%;
   background: var(--sand);
   color: var(--ink);
   font-family: var(--sans);
-}
-
-body {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
 }
 
 header {
@@ -89,14 +82,121 @@ h1 {
 }
 
 main {
-  flex: 1;
-  position: relative;
+  display: block;
 }
 
 #map {
-  position: absolute;
-  inset: 0;
+  width: 100%;
+  height: 70vh;
+  min-height: 360px;
   background: #cfe1ec;
+}
+
+#list {
+  padding: 1.5rem 1.5rem 3rem;
+  max-width: 880px;
+  margin: 0 auto;
+}
+
+.list-group {
+  margin-top: 2rem;
+}
+
+.list-group:first-child {
+  margin-top: 0.5rem;
+}
+
+.list-group-header {
+  font-family: var(--serif);
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: var(--navy);
+  margin: 0 0 0.75rem;
+  display: flex;
+  align-items: baseline;
+  gap: 0.5rem;
+}
+
+.list-group-header .swatch {
+  width: 0.7rem;
+  height: 0.7rem;
+  border-radius: 50%;
+  display: inline-block;
+  position: relative;
+  top: 0.05rem;
+}
+
+.list-group-header .count {
+  font-family: var(--sans);
+  font-size: 0.78rem;
+  font-weight: 500;
+  color: var(--navy-soft);
+  letter-spacing: 0.04em;
+}
+
+.list-group ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0.6rem;
+}
+
+@media (min-width: 600px) {
+  .list-group ul {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (min-width: 900px) {
+  .list-group ul {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+.list-item {
+  background: var(--white);
+  border: 1px solid var(--sand-deep);
+  border-radius: 6px;
+  padding: 0.85rem 1rem;
+  cursor: pointer;
+  transition: border-color 0.12s ease, transform 0.12s ease;
+  text-align: left;
+  width: 100%;
+  font-family: var(--sans);
+  color: var(--ink);
+}
+
+.list-item:hover, .list-item:focus-visible {
+  border-color: var(--navy);
+  outline: none;
+}
+
+.list-item .name {
+  font-family: var(--serif);
+  font-size: 1.02rem;
+  font-weight: 600;
+  color: var(--navy);
+  margin: 0 0 0.15rem;
+  line-height: 1.25;
+}
+
+.list-item .address {
+  font-size: 0.78rem;
+  color: var(--navy-soft);
+  margin: 0 0 0.4rem;
+}
+
+.list-item .note {
+  font-size: 0.85rem;
+  line-height: 1.4;
+  margin: 0;
+  color: var(--ink);
+}
+
+.list-group[hidden] {
+  display: none;
 }
 
 .pin {

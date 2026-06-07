@@ -19,8 +19,13 @@ function colorFor(type) {
   return colorByType.get(type);
 }
 
+const TYPE_ORDER = ["Coffee", "Eat", "Sweet", "Shop", "Beach", "See"];
+
 const activeTypes = new Set();
 const markersByType = new Map();
+const markerById = new Map();
+const placeById = new Map();
+const placesByType = new Map();
 
 const map = L.map("map", {
   center: NANTUCKET_CENTER,
@@ -67,15 +72,16 @@ function popupHtml(place) {
   </div>`;
 }
 
-const TYPE_ORDER = ["Coffee", "Eat", "Sweet", "Shop", "Beach", "See"];
+function orderedTypes() {
+  const present = Array.from(placesByType.keys());
+  return TYPE_ORDER.filter(t => present.includes(t))
+    .concat(present.filter(t => !TYPE_ORDER.includes(t)).sort());
+}
 
 function renderFilters() {
   const container = document.getElementById("filters");
   container.innerHTML = "";
-  const present = Array.from(markersByType.keys());
-  const ordered = TYPE_ORDER.filter(t => present.includes(t))
-    .concat(present.filter(t => !TYPE_ORDER.includes(t)).sort());
-  for (const type of ordered) {
+  for (const type of orderedTypes()) {
     const btn = document.createElement("button");
     btn.className = "filter-btn";
     btn.type = "button";
@@ -84,6 +90,59 @@ function renderFilters() {
     btn.addEventListener("click", () => toggleType(type));
     container.appendChild(btn);
   }
+}
+
+function renderList() {
+  const container = document.getElementById("list");
+  container.innerHTML = "";
+  for (const type of orderedTypes()) {
+    const places = placesByType.get(type) || [];
+    if (!places.length) continue;
+    const section = document.createElement("section");
+    section.className = "list-group";
+    section.dataset.type = type;
+    if (!activeTypes.has(type)) section.hidden = true;
+
+    const header = document.createElement("h2");
+    header.className = "list-group-header";
+    header.innerHTML = `<span class="swatch" style="background:${colorFor(type)}"></span>${escapeHtml(type)}<span class="count">${places.length}</span>`;
+    section.appendChild(header);
+
+    const ul = document.createElement("ul");
+    const sortedPlaces = places.slice().sort((a, b) => a.name.localeCompare(b.name));
+    for (const place of sortedPlaces) {
+      const li = document.createElement("li");
+      const btn = document.createElement("button");
+      btn.className = "list-item";
+      btn.type = "button";
+      btn.dataset.id = place.id;
+      btn.innerHTML = `
+        <h3 class="name">${escapeHtml(place.name)}</h3>
+        ${place.address ? `<p class="address">${escapeHtml(place.address)}</p>` : ""}
+        ${place.note ? `<p class="note">${escapeHtml(place.note)}</p>` : ""}
+      `;
+      btn.addEventListener("click", () => focusPlace(place.id));
+      li.appendChild(btn);
+      ul.appendChild(li);
+    }
+    section.appendChild(ul);
+    container.appendChild(section);
+  }
+}
+
+function focusPlace(id) {
+  const place = placeById.get(id);
+  const marker = markerById.get(id);
+  if (!place || !marker) return;
+  if (!activeTypes.has(place.type)) {
+    activeTypes.add(place.type);
+    for (const m of markersByType.get(place.type)) m.addTo(map);
+    renderFilters();
+    renderList();
+  }
+  document.getElementById("map").scrollIntoView({ behavior: "smooth", block: "start" });
+  map.flyTo([place.lat, place.lng], 15, { duration: 0.8 });
+  setTimeout(() => marker.openPopup(), 850);
 }
 
 function toggleType(type) {
@@ -95,6 +154,8 @@ function toggleType(type) {
     for (const m of markersByType.get(type)) m.addTo(map);
   }
   renderFilters();
+  const section = document.querySelector(`.list-group[data-type="${type}"]`);
+  if (section) section.hidden = !activeTypes.has(type);
 }
 
 async function loadPlaces() {
@@ -118,8 +179,13 @@ async function loadPlaces() {
     marker.bindPopup(popupHtml(place), { maxWidth: 280 });
     if (!markersByType.has(place.type)) markersByType.set(place.type, []);
     markersByType.get(place.type).push(marker);
+    if (!placesByType.has(place.type)) placesByType.set(place.type, []);
+    placesByType.get(place.type).push(place);
+    markerById.set(place.id, marker);
+    placeById.set(place.id, place);
     activeTypes.add(place.type);
     marker.addTo(map);
   }
   renderFilters();
+  renderList();
 })();
