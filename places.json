@@ -1,0 +1,442 @@
+[
+  {
+    "id": "island-coffee",
+    "name": "Island Coffee",
+    "type": "Coffee",
+    "address": "4 Broad Street",
+    "lat": 41.285283,
+    "lng": -70.098619,
+    "note": "If you are an early riser, they have piping hot muffins and croissants delivered every morning between 6 and 6:30am. They are worth getting up for.",
+    "photos": []
+  },
+  {
+    "id": "handlebar-cafe",
+    "name": "Handlebar Cafe",
+    "type": "Coffee",
+    "address": "15 Washington Street",
+    "lat": 41.282468,
+    "lng": -70.097375,
+    "note": "",
+    "photos": []
+  },
+  {
+    "id": "roastd",
+    "name": "Roast'd General Store",
+    "type": "Coffee",
+    "address": "159 Orange Street",
+    "lat": 41.272681,
+    "lng": -70.090132,
+    "note": "Get a coffee and then cross the street to go into the parking lot with the \"land bank\" sign. Walk down the gravel path and you will end up at the most beautiful spot with a view of the harbor. (They also have locations inside the mid-island Stop and Shop and Bartlett's Farm)",
+    "photos": []
+  },
+  {
+    "id": "cafe-22",
+    "name": "Café 22",
+    "type": "Eat",
+    "address": "22 Federal Street",
+    "lat": 41.284734,
+    "lng": -70.099441,
+    "note": "",
+    "photos": []
+  },
+  {
+    "id": "fresh",
+    "name": "Fresh",
+    "type": "Eat",
+    "address": "5 Salem Street",
+    "lat": 41.283229,
+    "lng": -70.097262,
+    "note": "",
+    "photos": []
+  },
+  {
+    "id": "scooters",
+    "name": "Scooters",
+    "type": "Eat",
+    "address": "10 Broad Street",
+    "lat": 41.285362,
+    "lng": -70.097732,
+    "note": "",
+    "photos": []
+  },
+  {
+    "id": "walters",
+    "name": "Walter's",
+    "type": "Eat",
+    "address": "10 Broad Street",
+    "lat": 41.285462,
+    "lng": -70.097732,
+    "note": "",
+    "photos": []
+  },
+  {
+    "id": "surfside",
+    "name": "Surfside",
+    "type": "Eat",
+    "address": "2 Broad Street",
+    "lat": 41.285495,
+    "lng": -70.097603,
+    "note": "A great place to go after the show. They do a $10 happy hour menu after 10pm.",
+    "photos": []
+  },
+  {
+    "id": "provisions",
+    "name": "Provisions",
+    "type": "Eat",
+    "address": "3 Harbour Square",
+    "lat": 41.284525,
+    "lng": -70.095866,
+    "note": "",
+    "photos": []
+  },
+  {
+    "id": "something-natural",
+    "name": "Something Natural",
+    "type": "Eat",
+    "address": "50 Cliff Road",
+    "lat": 41.289922,
+    "lng": -70.107309,
+    "note": "Excellent sandwiches and cookies. About half a mile from town.",
+    "photos": []
+  },
+  {
+    "id": "brotherhood-of-thieves",
+    "name": "The Brotherhood of Thieves",
+    "type": "Eat",
+    "address": "23 Broad Street",
+    "lat": 41.285255,
+    "lng": -70.100154,
+    "note": "Downstairs it is an old whaling tavern. Upstairs, it is a surfer situation. Out back, there is a patio with tvs for sports fans. Everything on the menu is good.",
+    "photos": []
+  },
+  {
+    "id": "lemon-press",
+    "name": "Lemon Press",
+    "type": "Eat",
+    "address": "41 Main Street",
+    "lat": 41.283393,
+    "lng": -70.098922,
+    "note": "Upstairs is a really cute restaurant with yummy breakfast.",
+    "photos": []
+  },
+  {
+    "id": "tap-room",
+    "name": "The Tap Room",
+    "type": "Eat",
+    "address": "29 Broad Street",
+    "lat": 41.285274,
+    "lng": -70.100864,
+    "note": "They have fancier dishes, but we love their burgers and wings.",
+    "photos": []
+  },
+  {
+    "id": "faregrounds",
+    "name": "Faregrounds",
+    "type": "Eat",
+    "address": "27 Fairgrounds Road",
+    "lat": 41.266474,
+    "lng": -70.089927,
+    "note": "Sports bar.",
+    "photos": []
+  },
+  {
+    "id": "kitty-murtaghs",
+    "name": "Kitty Murtagh's",
+    "type": "Eat",
+    "address": "4 West Creek Road",
+    "lat": 41.272162,
+    "lng": -70.090431,
+    "note": "Irish pub.",
+    "photos": []
+  },
+  {
+    "id": "airport-restaurant",
+    "name": "The Airport",
+    "type": "Eat",
+    "address": "14 Airport Road (Crosswinds at ACK)",
+    "lat": 41.256366,
+    "lng": -70.064247,
+    "note": "Yes, seriously. Like a NY diner menu.",
+    "photos": []
+  },
+  {
+    "id": "millies",
+    "name": "Millie's",
+    "type": "Eat",
+    "address": "326 Madaket Road",
+    "lat": 41.271324,
+    "lng": -70.199973,
+    "note": "Tacos.",
+    "photos": []
+  },
+  {
+    "id": "thai-house",
+    "name": "Thai House",
+    "type": "Eat",
+    "address": "118 Old South Road",
+    "lat": 41.261166,
+    "lng": -70.063659,
+    "note": "",
+    "photos": []
+  },
+  {
+    "id": "boat-house",
+    "name": "Boat House",
+    "type": "Eat",
+    "address": "2 Sanford Road",
+    "lat": 41.272769,
+    "lng": -70.094258,
+    "note": "Tacos, Jamaican food, Indian food, burgers.",
+    "photos": []
+  },
+  {
+    "id": "sayles-seafood",
+    "name": "Sayle's Seafood",
+    "type": "Eat",
+    "address": "99 Washington Street Extension",
+    "lat": 41.278646,
+    "lng": -70.093019,
+    "note": "",
+    "photos": []
+  },
+  {
+    "id": "gliddens-seafood",
+    "name": "Glidden's Seafood",
+    "type": "Eat",
+    "address": "115 Pleasant Street",
+    "lat": 41.272836,
+    "lng": -70.093367,
+    "note": "",
+    "photos": []
+  },
+  {
+    "id": "wicked-island-bakery",
+    "name": "Wicked Island Bakery",
+    "type": "Eat",
+    "address": "7B Bayberry Court",
+    "lat": 41.273378,
+    "lng": -70.092073,
+    "note": "Incredible.",
+    "photos": []
+  },
+  {
+    "id": "surfside-snack-shack",
+    "name": "Surfside Beach Snack Shack",
+    "type": "Eat",
+    "address": "160 Surfside Road",
+    "lat": 41.245407,
+    "lng": -70.094424,
+    "note": "Best burger on the island. You sit at a picnic table with a panoramic view of the ocean. It is a must. You can drive there or take the Wave. There is also a bike path.",
+    "photos": []
+  },
+  {
+    "id": "juice-bar",
+    "name": "The Juice Bar",
+    "type": "Sweet",
+    "address": "12 Broad Street",
+    "lat": 41.285185,
+    "lng": -70.098458,
+    "note": "Everything is made in house. It is sooooo good. Treat yourself to a freshly made waffle cone. No tasters. This is walking distance from town.",
+    "photos": []
+  },
+  {
+    "id": "island-kitchen",
+    "name": "Island Kitchen",
+    "type": "Sweet",
+    "address": "1 Chin's Way",
+    "lat": 41.272352,
+    "lng": -70.091273,
+    "note": "This is my personal favorite. They make everything in house. Every flavor is delicious. They will let you taste. If you want all of the flavors, you need to drive there. But you can get a limited selection of their flavors at the pharmacy on Main St., which is walking distance from town.",
+    "photos": []
+  },
+  {
+    "id": "hospital-thrift",
+    "name": "Hospital Thrift Shop",
+    "type": "Shop",
+    "address": "17 India Street",
+    "lat": 41.284001,
+    "lng": -70.100865,
+    "note": "Cate and I go here at least 3 times a week. I wish I was exaggerating, but I'm not. The inventory turns over very quickly, and it is hit or miss. But when you hit, you hit hard. As an example, last week my mom got a mint condition Cole Haan handbag for $7.50. Walking distance from town.",
+    "photos": []
+  },
+  {
+    "id": "commonwealth",
+    "name": "Commonwealth",
+    "type": "Shop",
+    "address": "16 Federal Street",
+    "lat": 41.284320,
+    "lng": -70.099599,
+    "note": "Consignment shop within walking distance. It has great stuff. Some super high end labels, but also some normal people options.",
+    "photos": []
+  },
+  {
+    "id": "rainbow-fleet",
+    "name": "Rainbow Fleet",
+    "type": "Shop",
+    "address": "167 Orange Street",
+    "lat": 41.271907,
+    "lng": -70.089475,
+    "note": "Consignment shop just over a mile from town (next door to Roast'd General Store). Their selection is amazing. And if you are into vintage, they also have a great vintage room.",
+    "photos": []
+  },
+  {
+    "id": "jetties-beach",
+    "name": "Jetties Beach",
+    "type": "Beach",
+    "address": "Jetties Beach",
+    "lat": 41.29595,
+    "lng": -70.103239,
+    "note": "Great sunset here. No waves. Always safe to swim. There is a restaurant/bar and a bathroom. One mile from town.",
+    "photos": []
+  },
+  {
+    "id": "steps-beach",
+    "name": "Steps Beach",
+    "type": "Beach",
+    "address": "Steps Beach",
+    "lat": 41.295434,
+    "lng": -70.109962,
+    "note": "Stunning. The perfect sunset location. No waves. Always safe to swim. No bathroom. As the name suggests, lots of stairs. One mile from town.",
+    "photos": []
+  },
+  {
+    "id": "cisco-beach",
+    "name": "Cisco Beach",
+    "type": "Beach",
+    "address": "Cisco Beach",
+    "lat": 41.251800,
+    "lng": -70.152410,
+    "note": "Driving distance from town. Waves and surfing. Lifeguards on duty. Bathrooms. Hot dog stand. Only a few feet from the parking lot to the sand.",
+    "photos": []
+  },
+  {
+    "id": "surfside-beach",
+    "name": "Surfside Beach",
+    "type": "Beach",
+    "address": "Surfside Beach",
+    "lat": 41.245307,
+    "lng": -70.094424,
+    "note": "Driving distance from town. Waves. Lifeguards on duty. Bathrooms. Best burger on the island. Island Kitchen ice cream. A bit of a walk from the parking lot to the sand.",
+    "photos": []
+  },
+  {
+    "id": "madaquecham",
+    "name": "Madaquecham Beach",
+    "type": "Beach",
+    "address": "Madequecham Valley Road",
+    "lat": 41.245128,
+    "lng": -70.056435,
+    "note": "Totally secluded and stunningly beautiful. No lifeguards on duty. Please be careful. It is a trek to get there, but it is totally worth it. No food. No bathrooms.",
+    "photos": []
+  },
+  {
+    "id": "dionis-beach",
+    "name": "Dionis Beach",
+    "type": "Beach",
+    "address": "Dionis Beach",
+    "lat": 41.294012,
+    "lng": -70.153628,
+    "note": "No waves. Lifeguards on duty. Bathrooms. No food.",
+    "photos": []
+  },
+  {
+    "id": "madaket-beach",
+    "name": "Madaket Beach",
+    "type": "Beach",
+    "address": "Madaket Beach",
+    "lat": 41.271424,
+    "lng": -70.199973,
+    "note": "Driving distance from town. Waves. Lifeguards on duty. Food and ice cream. Bathrooms.",
+    "photos": []
+  },
+  {
+    "id": "miacomet-beach",
+    "name": "Miacomet Beach",
+    "type": "Beach",
+    "address": "Miacomet Beach",
+    "lat": 41.243649600928535,
+    "lng": -70.11769639189697,
+    "note": "Driving distance from town. Waves. Very unusual location because there is a freshwater pond on the beach. Lifeguards on duty. Bathrooms. No food.",
+    "photos": []
+  },
+  {
+    "id": "whaling-museum",
+    "name": "Nantucket Whaling Museum",
+    "type": "See",
+    "address": "15 Broad Street",
+    "lat": 41.285544,
+    "lng": -70.098908,
+    "note": "Non-negotiable.",
+    "photos": []
+  },
+  {
+    "id": "brant-point-light",
+    "name": "Brant Point Lighthouse",
+    "type": "See",
+    "address": "Easton Street, Brant Point",
+    "lat": 41.289923,
+    "lng": -70.09031,
+    "note": "Non-negotiable. Visit the lighthouses.",
+    "photos": []
+  },
+  {
+    "id": "sankaty-head-light",
+    "name": "Sankaty Head Lighthouse",
+    "type": "See",
+    "address": "125 Sankaty Road, Siasconset",
+    "lat": 41.284401,
+    "lng": -69.966248,
+    "note": "Non-negotiable. Visit the lighthouses.",
+    "photos": []
+  },
+  {
+    "id": "great-point-light",
+    "name": "Great Point Lighthouse",
+    "type": "See",
+    "address": "Great Point",
+    "lat": 41.390076,
+    "lng": -70.048263,
+    "note": "Non-negotiable. Visit the lighthouses.",
+    "photos": []
+  },
+  {
+    "id": "sconset-bluff",
+    "name": "Sconset Bluff Walk",
+    "type": "See",
+    "address": "Sconset Bluff, Siasconset",
+    "lat": 41.269476,
+    "lng": -69.961825,
+    "note": "Non-negotiable. Walk the Sconset Bluff.",
+    "photos": []
+  },
+  {
+    "id": "drive-in",
+    "name": "Nantucket Drive-In",
+    "type": "See",
+    "address": "7 Nobadeer Farm Road",
+    "lat": 41.266081,
+    "lng": -70.060360,
+    "note": "Non-negotiable. Go to the drive-in.",
+    "photos": []
+  },
+  {
+    "id": "bartletts-farm",
+    "name": "Bartlett's Farm",
+    "type": "See",
+    "address": "33 Bartlett Farm Road",
+    "lat": 41.256863,
+    "lng": -70.133591,
+    "note": "Non-negotiable. Get veggies at Bartlett's Farm.",
+    "photos": []
+  },
+  {
+    "id": "linda-loring",
+    "name": "Linda Loring Nature Foundation",
+    "type": "See",
+    "address": "110 Eel Point Road",
+    "lat": 41.292176,
+    "lng": -70.170313,
+    "note": "The Linda Loring Foundation has free programming if you are interested in bird watching or learning about the ecology of the island.",
+    "photos": []
+  }
+]
